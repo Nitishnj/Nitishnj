@@ -1,0 +1,44 @@
+<svg width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6ec7"/>
+      <stop offset="100%" stop-color="#4ee1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="200" rx="16" fill="#0e0a20" stroke="#7c5cff33"/>
+  <text x="24" y="34" font-family="Consolas, monospace" font-size="16" font-weight="700" fill="#f2f0ff">Nitish's GitHub Stats</text>
+
+  <!-- rank ring -->
+  <g transform="translate(90,120)">
+    <circle r="52" fill="none" stroke="#ffffff14" stroke-width="10"/>
+    <circle r="52" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round"
+      stroke-dasharray="326" stroke-dashoffset="326" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" from="326" to="70" dur="1.6s" fill="freeze" begin="0.2s"/>
+    </circle>
+    <text y="6" text-anchor="middle" font-family="Consolas, monospace" font-size="20" font-weight="700" fill="#4ee1ff">A+</text>
+  </g>
+
+  <!-- stat rows sliding in -->
+  <g font-family="Consolas, monospace" font-size="14" fill="#c9c3ff">
+    <g transform="translate(180,60)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="220,60" to="180,60" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <text>⭐ Total Stars Earned</text><text x="300" fill="#f2f0ff" font-weight="700">12</text>
+    </g>
+    <g transform="translate(180,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.45s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="220,90" to="180,90" dur="0.5s" begin="0.45s" fill="freeze"/>
+      <text>📦 Total Commits</text><text x="300" fill="#f2f0ff" font-weight="700">640+</text>
+    </g>
+    <g transform="translate(180,120)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.6s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="220,120" to="180,120" dur="0.5s" begin="0.6s" fill="freeze"/>
+      <text>🔀 Total PRs</text><text x="300" fill="#f2f0ff" font-weight="700">18</text>
+    </g>
+    <g transform="translate(180,150)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.75s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="220,150" to="180,150" dur="0.5s" begin="0.75s" fill="freeze"/>
+      <text>📁 Repositories</text><text x="300" fill="#f2f0ff" font-weight="700">22</text>
+    </g>
+  </g>
+</svg>

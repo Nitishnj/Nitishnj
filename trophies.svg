@@ -1,0 +1,57 @@
+<svg width="720" height="180" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe37a"/><stop offset="100%" stop-color="#c99a2e"/>
+    </linearGradient>
+    <linearGradient id="shineGradT" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="180" rx="16" fill="#0e0a20" stroke="#7c5cff33"/>
+
+  <!-- 5 trophy cells -->
+  <g font-family="Consolas, monospace" font-size="11" text-anchor="middle" fill="#c9c3ff">
+    <!-- cell template repeated -->
+    <g transform="translate(80,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+      <circle r="46" fill="none" stroke="#39ff88" stroke-width="2"/>
+      <text y="-10" fill="url(#trophyGold)" font-size="26">🏆</text>
+      <text y="14">Commits</text>
+      <text y="30" fill="#39ff88" font-weight="700">SSS</text>
+    </g>
+    <g transform="translate(210,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.25s" fill="freeze"/>
+      <circle r="46" fill="none" stroke="#4ee1ff" stroke-width="2"/>
+      <text y="-10" fill="url(#trophyGold)" font-size="26">🏆</text>
+      <text y="14">PRs</text>
+      <text y="30" fill="#4ee1ff" font-weight="700">S</text>
+    </g>
+    <g transform="translate(340,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.4s" fill="freeze"/>
+      <circle r="46" fill="none" stroke="#ff6ec7" stroke-width="2"/>
+      <text y="-10" fill="url(#trophyGold)" font-size="26">🏆</text>
+      <text y="14">Stars</text>
+      <text y="30" fill="#ff6ec7" font-weight="700">A+</text>
+    </g>
+    <g transform="translate(470,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.55s" fill="freeze"/>
+      <circle r="46" fill="none" stroke="#a86bff" stroke-width="2"/>
+      <text y="-10" fill="url(#trophyGold)" font-size="26">🏆</text>
+      <text y="14">Repos</text>
+      <text y="30" fill="#a86bff" font-weight="700">A</text>
+    </g>
+    <g transform="translate(600,90)" opacity="0">
+      <animate attributeName="opacity" to="1" dur="0.5s" begin="0.7s" fill="freeze"/>
+      <circle r="46" fill="none" stroke="#ffd939" stroke-width="2"/>
+      <text y="-10" fill="url(#trophyGold)" font-size="26">🏆</text>
+      <text y="14">Streak</text>
+      <text y="30" fill="#ffd939" font-weight="700">A</text>
+    </g>
+  </g>
+
+  <rect x="-200" y="0" width="150" height="180" fill="url(#shineGradT)" transform="skewX(-20)">
+    <animate attributeName="x" values="-200;900" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
